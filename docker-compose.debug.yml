@@ -1,0 +1,13 @@
+version: '2.1'
+
+services:
+  javascriptproject1:
+    image: javascriptproject1
+    build: .
+    environment:
+      NODE_ENV: development
+    ports:
+      - 2020:2020
+      - 9229:9229
+    ## set your startup file here
+    command: node --inspect index.js

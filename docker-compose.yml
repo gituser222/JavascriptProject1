@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  javascriptproject1:
+    image: javascriptproject1
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 2020:2020
